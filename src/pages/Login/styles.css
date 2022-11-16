@@ -1,0 +1,106 @@
+@keyframes button-login {
+    from{background-color: #fff; border: 1px solid #808080;}
+    to{background-color: #7431f4; border: 1px solid #7431f4;}
+}
+
+@keyframes info {
+    from{color: #000; text-decoration: none; font-weight: none;}
+    to{color: #7431f4; text-decoration: underline; font-weight: bold;}
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    }
+
+    .container-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 448px;
+        background-color: #fff;
+        padding-bottom: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    .title-login {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 22px;
+    }
+
+    .input-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .button-login {
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #808080;
+        color: #808080;
+        width: 263px;
+        height: 67px;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    .button-login:hover {
+        color: #fff;
+        animation: button-login 2s;
+        animation-fill-mode: forwards;
+    }
+
+
+    .info {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        font-family: "IBM Plex Sans",sans-serif;
+        cursor: pointer;
+    }
+
+    .info:hover {
+        animation: info 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .logo-login {
+        display: none;
+    }
+
+
+@media (min-width: 768px) {
+    .container-login {
+        margin-top: 70px;
+    }
+
+    .logo-login {
+        display: block;
+        width: 70px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-login {
+        margin-top: 120px;
+    }
+
+    .logo-login {
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+}
